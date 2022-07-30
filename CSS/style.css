@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navigation{
+    height: 74px;
+    margin-top: 25px;
+    font-family: var(--font1);
+    /* background-color: rgb(90, 86, 86); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    /* font-size: 35px; */
+    display: flex;
+
+}
+.nav-left span{
+    font-size: 35px;
+
+}
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 22px;
+    /* font-weight: bold; */
+}
+.nav-left ul li{
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font1);
+    transition: all 0.3s ease-in-out;  
+}
+.nav-left ul li a:hover{
+    color: var(--main-bg-color);
+    font-weight: bolder;
+    
+}
+.nav-left ul li a{
+    text-decoration: none;
+    color:black;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+.content-left{
+    font-family: var(--font2);
+    font-size: 20px;
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 49px;
+    z-index: 1;
+
+}
+.content-right{
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.content-right img{
+    height: 355px;
+    /* padding: 0; */
+    border: 2px solid black;
+    border-radius: 200px;
+}
+
+.content{
+    height: 395px;
+    
+    display: flex;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+
+}
+.content::after{
+    content: "";
+    background-image: url('../img/fi2.jpeg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.25;
+    border-radius: 12px;
+}
+.home-books{
+    position: relative; 
+    padding: 18px;
+    background-color: rgb(247, 236, 240,0.9);
+    margin-top: 23px;
+    margin-left: 125px;
+    border-radius: 12px;
+}
+.year-box{
+    position: absolute;
+    /* background-color: cadetblue; */
+    right: 100px;
+    top: 160px;
+    width: 234px;
+    height: 255px;
+    font-size: 18px;
+}
+.year-box div{
+    margin: 12px 0;
+
+}
+.home-book{
+    display: flex;
+    margin: 25px;
+
+}
+
+.home-book img{
+    width: 300px;
+    /* border: 2px solid rgb(10, 10, 10); */
+
+}
+.home-book-content{
+    align-self: center;
+    padding: 25px;
+    
+}
+.home-book-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    height: 50px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+.footer a{
+    color: white;
+}
